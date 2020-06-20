@@ -25,6 +25,4 @@ int main()
 	v3.set(v2.get());
 
 	DoPlaks("hi");
-
-	__debugbreak();
 }
