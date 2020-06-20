@@ -12,7 +12,10 @@ namespace pcl::vectors
 	class dzen
 	{
 	public:
-		static_assert(std::is_base_of_v<pcl::policies::thread_model, ThreadModel>, "A ThreadModel specified does not have the 'thread_policy' tag");
+		static_assert(
+			std::is_base_of_v<pcl::policies::thread_model, ThreadModel>,
+			"A ThreadModel specified does not have the 'thread_policy' tag"
+			);
 
 		/// <summary>
 		/// Gets a reference to the internal value.
