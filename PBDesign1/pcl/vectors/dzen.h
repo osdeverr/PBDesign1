@@ -14,7 +14,7 @@ namespace pcl::vectors
 	public:
 		static_assert(
 			std::is_base_of_v<pcl::policies::thread_model, ThreadModel>,
-			"A ThreadModel specified does not have the 'thread_policy' tag"
+			"The specified ThreadModel does not have the thread_policy tag"
 			);
 
 		/// <summary>
