@@ -8,12 +8,12 @@ namespace pcl::vectors
 	/// </summary>
 	/// <typeparam name="T">The value type of this Dzen vector.</typeparam>
 	/// <typeparam name="ThreadModel">The thread model to use in this Dzen vector: <see cref="pcl::policies::thread_unsafe"/> by default.</typeparam>
-	template<class T, class ThreadModel = pcl::policies::thread_unsafe>
+	template<class T, class ThreadModel = pcl::policies::threading::thread_unsafe>
 	class dzen
 	{
 	public:
 		static_assert(
-			std::is_base_of_v<pcl::policies::thread_model, ThreadModel>,
+			std::is_base_of_v<pcl::policies::threading::thread_model, ThreadModel>,
 			"The specified ThreadModel does not have the thread_policy tag"
 			);
 

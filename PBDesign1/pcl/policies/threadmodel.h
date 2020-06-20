@@ -1,7 +1,7 @@
 #pragma once
 #include <mutex>
 
-namespace pcl::policies
+namespace pcl::policies::threading
 {
 	/// <summary>
 	/// Represents a "tag" to distinguish threading models from other policies.
