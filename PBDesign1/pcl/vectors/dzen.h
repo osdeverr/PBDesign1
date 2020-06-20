@@ -4,7 +4,7 @@
 namespace pcl::vectors
 {
 	/// <summary>
-	/// Represents a Dzen vector. Exists for the sole reason of shits and giggles
+	/// Represents a Dzen vector. Exists for the sole reason of shits and giggles.
 	/// </summary>
 	/// <typeparam name="T">The value type of this Dzen vector.</typeparam>
 	/// <typeparam name="ThreadModel">The thread model to use in this Dzen vector: <see cref="pcl::policies::thread_unsafe"/> by default.</typeparam>
