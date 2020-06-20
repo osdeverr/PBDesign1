@@ -4,11 +4,12 @@
 #include <pcl/policies/invalid.h>
 #include <pcl/vectors/dzen.h>
 #include <pcl/hashing/autohash.h>
+#include <fmt/format.h>
 
 using myhash = pcl::hashing::autohash<std::string>;
 void DoPlaks(myhash h)
 {
-	std::printf("Resolved: %s", h.resolve().c_str());
+	fmt::print("Resolved: '{}'", h.resolve());
 }
 
 int main()

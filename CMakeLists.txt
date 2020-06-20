@@ -8,3 +8,5 @@ project ("PBDesign1")
 
 # Include sub-projects.
 add_subdirectory ("PBDesign1")
+add_subdirectory ("fmt")
+
